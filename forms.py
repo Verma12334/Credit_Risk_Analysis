@@ -83,3 +83,4 @@ class InputForm(FlaskForm):
     cb_person_cred_hist_length = IntegerField("cb_person_cred_hist_length", validators=[DataRequired()])
 
     submit = SubmitField("Submit")
+    
