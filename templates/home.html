@@ -1,0 +1,18 @@
+
+{% extends "layout.html" %}
+
+{% block content %}
+<div>
+    <h1>
+        <b>
+            WECOME ON CREDIT RISK MODELLING PROJECT :
+    </b>
+</h1>
+<br>
+    <h1><b>This project estimates credit risk and informs lending decisions using algorithms like KNN, logistic regression, decision trees, and random forests, with SMOTE for data imbalance and KNN Imputer for missing values</b></h1> 
+    <br>
+    <br>   
+    <a href="{{ url_for('predict') }}">Click Here!</a>
+</div>
+<br>
+{% endblock content %}

@@ -1,0 +1,129 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<form action="{{ url_for('predict') }}" method="post">
+    {{ form.hidden_tag() }}
+
+    <div>
+        {{ form.person_age.label}}
+        {{ form.person_age }}
+        {% if form.person_age.errors %}
+            {% for error in form.person_age.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.person_income.label }}
+        {{ form.person_income }}
+        {% if form.person_income.errors %}
+            {% for error in form.person_income.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.person_home_ownership.label }}
+        {{ form.person_home_ownership }}
+        {% if form.person_home_ownership.errors %}
+            {% for error in form.person_home_ownership.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.person_emp_length.label }}
+        {{ form.person_emp_length }}
+        {% if form.person_emp_length.errors %}
+            {% for error in form.person_emp_length.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.loan_intent.label }}
+        {{ form.loan_intent }}
+        {% if form.loan_intent.errors %}
+            {% for error in form.loan_intent.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.loan_grade.label }}
+        {{ form.loan_grade }}
+        {% if form.loan_grade.errors %}
+            {% for error in form.loan_grade.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.loan_amnt.label }}
+        {{ form.loan_amnt }}
+        {% if form.loan_amnt.errors %}
+            {% for error in form.loan_amnt.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.loan_int_rate.label }}
+        {{ form.loan_int_rate }}
+        {% if form.loan_int_rate.errors %}
+            {% for error in form.loan_int_rate.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.loan_percent_income.label }}
+        {{ form.loan_percent_income }}
+        {% if form.loan_percent_income.errors %}
+            {% for error in form.loan_percent_income.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.cb_person_default_on_file.label }}
+        {{ form.cb_person_default_on_file }}
+        {% if form.cb_person_default_on_file.errors %}
+            {% for error in form.cb_person_default_on_file.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div>
+        {{ form.cb_person_cred_hist_length.label }}
+        {{ form.cb_person_cred_hist_length }}
+        {% if form.cb_person_cred_hist_length.errors %}
+            {% for error in form.cb_person_cred_hist_length.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div></div>
+    <div>{{ form.submit() }}</div>
+    <br>
+    <div>
+        {{ output }}
+    </div>
+    <br>
+    <div>
+        <p>Redirect to Homepage? <a href="{{ url_for('home') }}">Home</a></p>
+    </div>
+</form>
+{% endblock content %}
+
