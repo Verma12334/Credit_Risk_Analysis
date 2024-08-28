@@ -1,5 +1,9 @@
 # Credit Risk Analysis
 
+
+# This is website of above project
+https://credit-risk-analysis-hni6.onrender.com
+
 ## Introduction
 Credit risk modelling refers to the use of financial models to estimate losses a firm might suffer in the event of a borrower’s default. Financial institutions used credit risk analysis models to determine the probability of default of a potential borrower. The models provide information on the level of a borrower’s credit risk at any particular time. If the lender fails to detect the credit risk in advance, it exposes them to the risk of default and loss of funds. Lenders rely on the validation provided by credit risk analysis models to make key lending decisions on whether or not to extend credit to the borrower and the credit to be charged.
 The probability of default, sometimes abbreviated as POD, is the likelihood that a borrower will default on their loan obligations.
